@@ -109,9 +109,8 @@ My final model consisted of the following layers:
 
 ####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-The code for training the model is located in the eigth cell of the ipython notebook. 
-
-To train the model, I used an ....
+The code for training the model is located in the cell that begins with the comment #Train the model
+To train the model, I simply added dropoout to the code that was used to train the LeNet model. I used keep_probability of 0.5 during training. The rest is pretty much the same, initialize variables, process batches by batch_size in a loop epoch count times, print out the accuracy of each iteration and save the model.
 
 ####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
