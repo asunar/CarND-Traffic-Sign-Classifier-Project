@@ -136,7 +136,7 @@ Training, validation and test set accuracies of near 90% or above with just 20 e
 
 Here are five German traffic signs that I found on the web:
 
-![Test][/signs/gostraightorleft.37.jpg] ![alt text][image5] ![alt text][image6] 
+![Test][./signs/gostraightorleft.37.jpg] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
 The first image might be difficult to classify because ...
