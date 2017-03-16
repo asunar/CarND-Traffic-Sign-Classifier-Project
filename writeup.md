@@ -117,21 +117,17 @@ To train the model, I simply added dropoout to the code that was used to train t
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
-
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+* training set accuracy of ? 0.996
+* validation set accuracy of ? 0.943
+* test set accuracy of ? 0.890
 
 If a well known architecture was chosen:
 * What architecture was chosen?
 * Why did you believe it would be relevant to the traffic sign application?
+Started with the LeNet architecture. I think it was relevant because both problems were related to image recognition. 
+
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+Training, validation and test set accuracies of near 90% or above with just 20 epochs provide evidence that model is fairly good at classifying images in a new set. Normalizing the images, adding a dropout layer to the LeNet architecture along with tuning the hyperparameters (learning rate, standard deviation, batch size) helped improve the validation accuracy.
  
 
 ###Test a Model on New Images
@@ -140,7 +136,7 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
+![Test][/signs/gostraightorleft.37.jpg] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
 The first image might be difficult to classify because ...
