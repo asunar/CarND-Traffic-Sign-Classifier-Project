@@ -126,7 +126,7 @@ If a well known architecture was chosen:
 Started with the LeNet architecture. I think it was relevant because both problems were related to image recognition. 
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-Training, validation and test set accuracies of near 90% or above with just 20 epochs provide evidence that model is fairly good at classifying images in a new set. Normalizing the images, adding a dropout layer to the LeNet architecture along with tuning the hyperparameters (learning rate, standard deviation, batch size) helped improve the validation accuracy.
+Training, validation and test set accuracies over 93% with just 20 epochs provide evidence that model is fairly good at classifying images in a new set. Normalizing the images, adding a dropout layer to the LeNet architecture along with tuning the hyperparameters (learning rate, standard deviation, batch size) helped improve the validation accuracy.
  
 
 ###Test a Model on New Images
@@ -141,7 +141,8 @@ Here are five German traffic signs that I found on the web:
 <img src="./signs/nopassing.9.jpg" alt="No passing - 9" width="25%"/>
 <img src="./signs/speedlimit80.6.jpg" alt="Speed limit 80km - 6" width="25%"/>
 
-The first image might be difficult to classify because ...
+The first image might be difficult to classify because the bottom of the sign is cropped out so model may not have been able to detect circle in the image. All of the go straight or left signs I looked in the training set include the circle which contains the actual sign.
+
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
