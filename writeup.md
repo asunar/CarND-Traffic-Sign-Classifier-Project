@@ -21,8 +21,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
+[image3]: ./examples/random_noise.jpg "Random Noise" 
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
@@ -135,9 +134,12 @@ Training, validation and test set accuracies of near 90% or above with just 20 e
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
-
-![Test][signs/gostraightorleft.37.jpg] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+ 
+<img src="./signs/gostraightorleft.37.jpg" style="float:left" alt="Go straight or left - 37" width="25%"/>
+<img src="./signs/keepleft.39.jpg" style="float:left"  alt="Keep left - 39" width="25%"/>
+<img src="./signs/no_entry.17.jpg" alt="No entry - 17" width="25%"/>
+<img src="./signs/nopassing.9.jpg" alt="No passing - 9" width="25%"/>
+<img src="./signs/speedlimit80.6.jpg" alt="Speed limit 80km - 6" width="25%"/>
 
 The first image might be difficult to classify because ...
 
