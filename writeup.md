@@ -143,6 +143,7 @@ Here are five German traffic signs that I found on the web:
 
 The first image might be difficult to classify because the bottom of the sign is cropped out so model may not have been able to detect circle in the image. All of the go straight or left signs I looked in the training set include the circle which contains the actual sign.
 
+This was an interesting mistake on my part so I decided to leave it in. I simply labeled the image wrong; the last image is for speed limit 80km. I accidentally labeled the image as end of speed limit 80km. Another example of the simplest explanation is probably the correct one. I should have double checked the labeling before diving into code to figure out what was going wrong.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
