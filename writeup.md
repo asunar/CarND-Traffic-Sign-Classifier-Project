@@ -116,9 +116,9 @@ To train the model, I simply added dropoout to the code that was used to train t
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
 My final model results were:
-* training set accuracy of ? 0.996
-* validation set accuracy of ? 0.943
-* test set accuracy of ? 0.890
+* training set accuracy of ? 0.999
+* validation set accuracy of ? 0.953
+* test set accuracy of ? 0.936
 
 If a well known architecture was chosen:
 * What architecture was chosen?
