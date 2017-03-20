@@ -172,7 +172,7 @@ For the first image, the model is very confident (94%) that it is a Roundabout m
 
 For the second image, the model is extremely confident (99%) that it is a Keep left sign.
 
-For the third, fourth and fifth images, the model is absolutely confident (100%) that they are a No entry, No passing, Speed limit (30km/h) signs respectively.
+For the third, fourth and fifth images, the model is absolutely confident (100%) that they are No entry, No passing, Speed limit (30km/h) signs respectively.
 
 The model seems to be overly confident of its predictions which is generally not a good sign. It may warrant a second look at softmax calculations and/or the model architecture. The silver lining is that the model predicts the first image may indeed be a go straight or left sign. 
 
