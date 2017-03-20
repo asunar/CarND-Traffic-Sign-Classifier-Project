@@ -166,9 +166,17 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the cell that starts with Print out the top five softmax...
 
-Please see the probability/prediction table in the notebook.
+Please see the probability/prediction table for details in the notebook. It is in the cell that starts with Probability prediction table
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is very confident (94%) that it is a Roundabout mandatory sign. There is a 5% probability that is a go straight or left sign
+
+For the second image, the model is extremely confident (99%) that it is a Keep left sign.
+
+For the third, fourth and fifth images, the model is absolutely confident (100%) that they are a No entry, No passing, Speed limit (30km/h) signs respectively.
+
+The model seems to be overly confident of its predictions which is generally not a good sign. It may warrant a second look at softmax calculations and/or the model architecture. The silver lining is that the model predicts the first image may indeed be a go straight or left sign. 
+
+
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
