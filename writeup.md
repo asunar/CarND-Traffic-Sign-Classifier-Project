@@ -166,7 +166,7 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the cell that starts with Print out the top five softmax...
 
-Please see the probability/prediction table for details in the notebook. It is in the cell that starts with Probability prediction table
+Please see the probability/prediction table for details in the [notebook](https://github.com/asunar/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). It is in the cell that starts with Probability prediction table
 
 For the first image, the model is very confident (94%) that it is a Roundabout mandatory sign. There is a 5% probability that is a go straight or left sign
 
@@ -176,15 +176,3 @@ For the third, fourth and fifth images, the model is absolutely confident (100%)
 
 The model seems to be overly confident of its predictions which is generally not a good sign. It may warrant a second look at softmax calculations and/or the model architecture. The silver lining is that the model predicts the first image may indeed be a go straight or left sign. 
 
-
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
