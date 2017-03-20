@@ -21,8 +21,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
+[image3]: ./examples/random_noise.jpg "Random Noise" 
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
@@ -117,9 +116,9 @@ To train the model, I simply added dropoout to the code that was used to train t
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
 My final model results were:
-* training set accuracy of ? 0.996
-* validation set accuracy of ? 0.943
-* test set accuracy of ? 0.890
+* training set accuracy of ? 0.999
+* validation set accuracy of ? 0.953
+* test set accuracy of ? 0.936
 
 If a well known architecture was chosen:
 * What architecture was chosen?
@@ -127,7 +126,7 @@ If a well known architecture was chosen:
 Started with the LeNet architecture. I think it was relevant because both problems were related to image recognition. 
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-Training, validation and test set accuracies of near 90% or above with just 20 epochs provide evidence that model is fairly good at classifying images in a new set. Normalizing the images, adding a dropout layer to the LeNet architecture along with tuning the hyperparameters (learning rate, standard deviation, batch size) helped improve the validation accuracy.
+Training, validation and test set accuracies over 93% with just 20 epochs provide evidence that model is fairly good at classifying images in a new set. Normalizing the images, adding a dropout layer to the LeNet architecture along with tuning the hyperparameters (learning rate, standard deviation, batch size) helped improve the validation accuracy.
  
 
 ###Test a Model on New Images
@@ -135,11 +134,16 @@ Training, validation and test set accuracies of near 90% or above with just 20 e
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
+ 
+<img src="./signs/gostraightorleft.37.jpg" style="float:left" alt="Go straight or left - 37" width="25%"/>
+<img src="./signs/keepleft.39.jpg" style="float:left"  alt="Keep left - 39" width="25%"/>
+<img src="./signs/no_entry.17.jpg" alt="No entry - 17" width="25%"/>
+<img src="./signs/nopassing.9.jpg" alt="No passing - 9" width="25%"/>
+<img src="./signs/speedlimit80.6.jpg" alt="Speed limit 80km - 6" width="25%"/>
 
-![Test][signs/gostraightorleft.37.jpg] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+The first image might be difficult to classify because the bottom of the sign is cropped out so model may not have been able to detect circle in the image. All of the go straight or left signs I looked in the training set include the circle which contains the actual sign.
 
-The first image might be difficult to classify because ...
+This was an interesting mistake on my part so I decided to leave it in. I simply labeled the image wrong; the last image is for speed limit 80km. I accidentally labeled the image as end of speed limit 80km. Another example of the simplest explanation is probably the correct one. I should have double checked the labeling before diving into code to figure out what was going wrong.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
